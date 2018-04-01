@@ -55,10 +55,12 @@ class Complex
 
 //Function Definitions
 /*
+____________________________________________________________________________________________________________________________________
 Function Definition Syntax: returntype classname::functionname (input1, input2,...., inputn)
 {
     //operation commands
 }
+____________________________________________________________________________________________________________________________________
 NOTICE: NO SEMICOLONS IN THE DEFINITION SYNTAX
 ==================================================================================================================
 RULE OF THUMB: WHEN A FUNCTION IS FOLLOWED BY CURLY BRACES, YOU DONOT PUT A SEMICOLON
