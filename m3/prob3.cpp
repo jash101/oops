@@ -1,3 +1,9 @@
+/*
+Written by: Yash Shetye
+Problem Statement: Calculate the area of rectangle and circle,where both are inherited from the base class
+SHAPE where calArea() should be a pure virtual function.The length and radius should
+be accepted from user and must be of type float.
+*/
 #include<iostream>
 using namespace std;
 class SHAPE

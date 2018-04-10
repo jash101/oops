@@ -1,3 +1,7 @@
+/*
+Written by: Yash Shetye
+Problem Statement: Program to add, subtract, multiply and divide two numbers using class template
+*/
 #include<iostream>
 using namespace std;
 template<class T>class Sample
