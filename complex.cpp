@@ -20,6 +20,7 @@ class complex
     void seti(double);
     void disp();
     double mag();
+    complex conj();
 
     double getr()
     {
@@ -62,6 +63,14 @@ complex operator*(complex a, complex b)
     return result;
 }
 
+complex operator/(complex a, complex b)
+{
+    complex result;
+    result = a*b.conj();
+    result.set(result.getr()/(b.mag()*b.mag()), result.geti()/(b.mag()*b.mag()));
+    return result;
+    
+}
 
 //NEED TO REPEAT ABOVE FOR OTHER MATHTEMATICAL OPERATIONS
 
@@ -75,7 +84,9 @@ int main()
     two.disp();
     complex r = number - two;
     r.disp();
-    cout<<endl<<"Mag: "<<number.mag();
+    cout<<endl<<"Mag: "<<number.mag()<<endl;
+    complex d = number/two;
+    d.disp();
     return 0;
 }
 void complex::setr(double real)
@@ -94,4 +105,11 @@ void complex::disp()
 double complex::mag()
 {
     return (sqrt(real*real + imag*imag));
+}
+
+complex complex::conj()
+{
+    complex result;
+    result.set(real, -imag);
+    return result;
 }
